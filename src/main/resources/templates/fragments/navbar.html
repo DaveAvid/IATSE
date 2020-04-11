@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 py-md-0" th:fragment="navbar">
+        <a class="navbar-brand" th:href="@{/}">
+            <img src="/pics/iatse_logo_black_416.png" style="display: inline-block; max-width: 75px;">
+            <span style="display: inline-block;">I.A.T.S.E. Local 416</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html" th:href="@{/about}" th:classappend="${#httpServletRequest.getRequestURI() == '/about' ? 'active':''}">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar.html" th:href="@{/calendar}" th:classappend="${#httpServletRequest.getRequestURI() == '/calendar' ? 'active':''}">Calendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="education.html" th:href="@{/education}" th:classappend="${#httpServletRequest.getRequestURI() == '/education' ? 'active':''}">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="employeeresources.html" th:href="@{/resources}" th:classappend="${#httpServletRequest.getRequestURI() == '/resources' ? 'active':''}">Resources</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <a th:href="@{/login}" class="btn btn-secondary my-2 my-sm-0" role="button">Login</a>
+                <a th:href="@{/registration}" class="btn btn-secondary my-2 my-sm-0" role="button">Register</a>
+            </form>
+        </div>
+    </nav>
+
+</body>
+</html>
