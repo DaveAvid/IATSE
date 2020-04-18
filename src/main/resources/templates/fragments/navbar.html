@@ -20,7 +20,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="about.html" th:href="@{/about}" th:classappend="${#httpServletRequest.getRequestURI() == '/about' ? 'active':''}">About <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" >
                     <a class="nav-link" href="calendar.html" th:href="@{/calendar}" th:classappend="${#httpServletRequest.getRequestURI() == '/calendar' ? 'active':''}">Calendar</a>
                 </li>
                 <li class="nav-item">
@@ -30,10 +30,18 @@
                     <a class="nav-link" href="employeeresources.html" th:href="@{/resources}" th:classappend="${#httpServletRequest.getRequestURI() == '/resources' ? 'active':''}">Resources</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <div  sec:authorize="isAuthenticated()" >
+                <div class="emailLogin">
+            <span  th:text ="${#authentication.getPrincipal().getUsername()}"></span>
+                </div>
+            </div>
+            <div class="form-inline my-2 my-lg-0" sec:authorize="isAnonymous()">
                 <a th:href="@{/login}" class="btn btn-secondary my-2 my-sm-0" role="button">Login</a>
                 <a th:href="@{/registration}" class="btn btn-secondary my-2 my-sm-0" role="button">Register</a>
-            </form>
+            </div>
+            <div class="form-inline my-2 my-lg-0" sec:authorize="isAuthenticated()">
+                <a th:href="@{/logout}" class="btn btn-secondary my-2 my-sm-0" role="button">Logout</a>
+            </div>
         </div>
     </nav>
 

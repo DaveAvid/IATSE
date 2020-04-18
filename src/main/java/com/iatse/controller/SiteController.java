@@ -1,8 +1,11 @@
 package com.iatse.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.security.Principal;
+@Slf4j
 @Controller
 public class SiteController {
 
@@ -11,7 +14,9 @@ public class SiteController {
     public String showIndex() {return "index";}
 
     @GetMapping("/calendar")
-    public String showEvents() {return "calendar";}
+    public String showEvents(Principal principal) {
+            log.info("principal");
+    return "calendar";}
 
     @GetMapping("/about")
     public String showAbout() {return "about";}

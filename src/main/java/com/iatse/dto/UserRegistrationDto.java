@@ -5,6 +5,7 @@ import lombok.Setter;
 
 import javax.validation.constraints.AssertTrue;
 import javax.validation.constraints.Email;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 
 @Getter
@@ -18,9 +19,11 @@ public class UserRegistrationDto {
     private String lastName;
 
     @NotEmpty
+    @Min(8)
     private String password;
 
     @NotEmpty
+    @Min(8)
     private String confirmPassword;
 
     @NotEmpty
