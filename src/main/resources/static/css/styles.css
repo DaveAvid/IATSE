@@ -32,6 +32,24 @@ body {
     padding-left: 20px;
 }
 
+.section {
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cacaca;
+}
+
+.titleimage {
+    height: 25rem;
+    float: right;
+}
+
+.marginleft {
+    margin-left: 10px;
+}
+
+
 /* Add a card effect for articles */
 .img-card {
     background-color: white;
