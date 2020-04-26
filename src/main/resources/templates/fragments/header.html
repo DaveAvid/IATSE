@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
-<head th:fragment="header">
-    <link rel="shortcut-icon" th:href="@{/resources/favicon/favicon.png}" type="image/x-icon" />
-    <link rel="shortcut-icon" th:href="@{/favicon.png}" type="image/x-icon" />
+<html xmlns:th="http://thymeleaf.org/">
+<th:block th:fragment="header">
+    <meta charset="UTF-8">
+    <meta name="author" content="David Wagner, Brandon Salmon, Ryan Lynea">
+    <link rel="shortcut-icon" th:href="@{/img/favicon.png}" type="image/png" />
+    <link rel="shortcut-icon" th:href="@{/favicon.png}" type="image/png" />
     <link rel="stylesheet" type="text/css" href="../css/styles.css" th:href="@{/css/styles.css}">
     <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css} "/>
     <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
     <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
-</head>
+</th:block>
 <body>
 </body>
 </html>

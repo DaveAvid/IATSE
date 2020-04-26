@@ -32,6 +32,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                         "/about",
                         "/education",
                         "/adacompliance",
+                        "/favicon.ico",
                         "/").permitAll()
                 .anyRequest().authenticated()
                 .and()
