@@ -31,6 +31,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                         "/webjars/**",
                         "/about",
                         "/education",
+                        "/adacompliance",
                         "/").permitAll()
                 .anyRequest().authenticated()
                 .and()

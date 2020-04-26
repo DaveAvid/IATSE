@@ -33,4 +33,9 @@ public class SiteController {
     @GetMapping("/admin")
     public String showAdmin() {return "admin";}
 
+    @GetMapping("/adacompliance")
+    public String showAdaCompliance() {
+        return "adacompliance";
+    }
+
 }
