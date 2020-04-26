@@ -29,7 +29,7 @@
                     <a class="nav-link" href="education.html" th:href="@{/education}" th:classappend="${#httpServletRequest.getRequestURI() == '/education' ? 'active':''}">Education</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="employeeresources.html" th:href="@{/resources}" th:classappend="${#httpServletRequest.getRequestURI() == '/resources' ? 'active':''}">Resources</a>
+                    <a class="nav-link" href="resources.html" th:href="@{/resources}" th:classappend="${#httpServletRequest.getRequestURI() == '/resources' ? 'active':''}">Resources</a>
                 </li>
             </ul>
             <div  sec:authorize="isAuthenticated()" >
