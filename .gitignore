@@ -5,7 +5,7 @@ target/
 logs/
 */application-secrets.properties
 application-secrets.properties
-src/main/resources/keystore.jks
+
 
 
 
