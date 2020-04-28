@@ -5,6 +5,9 @@ target/
 logs/
 */application-secrets.properties
 application-secrets.properties
+db.properties
+db.lck
+db.script
 
 
 
