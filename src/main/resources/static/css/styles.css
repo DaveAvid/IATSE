@@ -53,6 +53,10 @@ body {
     margin-left: 10px;
 }
 
+.maincontent {
+    padding-top: 75px;
+}
+
 
 /* Add a card effect for articles */
 .img-card {
@@ -63,6 +67,10 @@ body {
 
 .img-card img:hover {
     opacity: 0.75;
+}
+
+.caraImg {
+    max-height: 500px;
 }
 
 .txt-card {
@@ -139,6 +147,15 @@ body {
     margin: 2em 2em 2em 2em;
 }
 
+.navbarLogo {
+    display: inline-block;
+    max-width: 75px;
+}
+
+.navbarTitle {
+    display: inline-block;
+}
+
 /* Navbar links */
 .topnav a {
     color: #f2f2f2;
@@ -168,5 +185,9 @@ img {
   padding-right: 200px;
   padding-bottom: 0px;
   padding-left: 0px;
+}
+
+.marginAuto {
+    margin: auto;
 }
 
