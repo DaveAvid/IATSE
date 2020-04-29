@@ -3,10 +3,7 @@ package com.iatse.dto;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.validation.constraints.AssertTrue;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.*;
 
 @Getter
 @Setter
@@ -19,11 +16,11 @@ public class UserRegistrationDto {
     private String lastName;
 
     @NotEmpty
-    @Min(8)
+    @Size(min=8, max=32)
     private String password;
 
     @NotEmpty
-    @Min(8)
+    @Size(min=8, max=32)
     private String confirmPassword;
 
     @NotEmpty
