@@ -32,6 +32,14 @@ body {
     padding-left: 20px;
 }
 
+#content{
+margin-top: 35px;
+}
+#footdiv{
+text-align: center;
+
+}
+
 .center {
     margin: auto;
 }
@@ -86,14 +94,6 @@ body {
     clear: both;
 }
 
-/* Footer */
-.footer {
-    padding: 20px;
-    text-align: center;
-    color: white;
-    background: #BBDDE7;
-    margin-top: 20px;
-}
 
 .adaCompliance {
     position: absolute;
@@ -109,15 +109,6 @@ body {
     }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-    .topnav a {
-        float: right;
-    }
-    .topnav{
-        width: 50%;
-    }
-}
 
 /* IATSE logo */
 #logo {
